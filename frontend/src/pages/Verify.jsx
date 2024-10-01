@@ -11,9 +11,6 @@ const Verify = () => {
     const success=searchParams.get('success')
     const orderId=searchParams.get('orderId')
     
-    
-
-
     const verifyPayment=async ()=>{
        try {
         
