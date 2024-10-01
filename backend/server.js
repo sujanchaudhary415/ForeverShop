@@ -16,7 +16,10 @@ connectCloudinary()
 
 // Middlewares
 app.use(express.json())
-app.use(cors({ origin: 'https://forever-frontend-orcin.vercel.app' }))
+app.use(cors({
+    origin: ['https://forever-frontend-orcin.vercel.app', 'http://localhost:3000']
+}))
+
 
 // API endpoints
 app.use('/api/user', userRouter)
