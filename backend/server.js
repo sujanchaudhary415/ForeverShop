@@ -16,7 +16,7 @@ connectCloudinary()
 
 //Middlewares
 app.use(express.json())
-app.use(cors())
+app.use(cors({ origin: 'https://forever-frontend-orcin.vercel.app' }));
 
 //API endpoints
 app.use('/api/user',userRouter)
